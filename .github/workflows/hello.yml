@@ -4,6 +4,8 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
+      - name: Get my files
+        uses: actions/checkout@v4
       - name: Say hello
         run: echo "Hello from the robot, Ash!"
       - name: List files
