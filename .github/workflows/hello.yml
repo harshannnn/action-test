@@ -8,5 +8,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Say hello
         run: echo "Hello from the robot, Ash!"
+      - name: Make it fail
+        run: exit 1
       - name: List files
         run: ls
